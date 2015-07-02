@@ -1,0 +1,30 @@
+{
+  "name": "pastel-api",
+  "version": "1.0.0",
+  "description": "API Backend for Pastel Video Workflow",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Robert-Wickware@github.com/Robert-Wickware/Pastel-API.git"
+  },
+  "author": "Robert Evola",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Robert-Wickware/Pastel-API/issues"
+  },
+  "homepage": "https://github.com/Robert-Wickware/Pastel-API#readme",
+  "dependencies": {
+    "express": "^4.13.0",
+    "me2": "0.0.2",
+    "mongodb-uri": "^0.9.7",
+    "mongoose": "^4.0.6",
+    "path": "^0.11.14",
+    "util": "^0.10.3"
+  },
+  "engines": {
+    "node": "0.12.x"
+  }
+}
