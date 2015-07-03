@@ -1,9 +1,10 @@
 /// <reference path="typings/tsd.d.ts" />
  
 var express = require('express');
-var path = require('path');
 var mongoose = require('mongoose');
 var uriUtil = require('mongodb-uri');
+var bodyParser = require('body-parser');
+var path = require('path');
 var app = express();
 
 
@@ -21,12 +22,16 @@ db.once('open', function () {
   console.log("Connection open!");
 });
 
+//Configuring Middleware
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended : true}));
+
 //Creating the path's for the routes
-//var indexRoute = require(path.join(__dirname, 'api/index'));
-//app.use('/', indexRoute);
+var apiRoute = require(path.join(__dirname, './routes'));
+app.use('/api', apiRoute);
 
 app.get('/', function(req, res) {
-  res.send('Hello World!');
+  res.send('Pastel API Index Page');
 });
  
 //Use the appropriate port if running on Heroku or Locally

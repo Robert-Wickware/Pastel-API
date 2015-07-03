@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Robert-Wickware/Pastel-API#readme",
   "dependencies": {
+    "body-parser": "^1.13.1",
     "express": "^4.13.0",
     "me2": "0.0.2",
     "mongodb-uri": "^0.9.7",
