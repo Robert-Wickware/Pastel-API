@@ -9,7 +9,7 @@ var app = express();
 
 
 //Converting the mongoDB URI to a compatible mongoose URI
-var mongodbURI = 'mongodb://wickware-admin:R2-pakouhite@ds051831.mongolab.com:51831/heroku_mlcfqv1f';
+var mongodbURI = 'mongodb://wickware-admin:R2-pakouhite@ds045618.mongolab.com:45618/heroku_1s420hfs';
 var mongooseURI = uriUtil.formatMongoose(mongodbURI);
 
 //Attempt to connect to the DB, save the connection 
